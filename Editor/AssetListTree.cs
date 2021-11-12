@@ -51,9 +51,9 @@ namespace AssetBundleBrowser
             retVal[2].autoResize = true;
 
             retVal[3].headerContent = new GUIContent("!", "Errors, Warnings, or Info");
-            retVal[3].minWidth = 16;
-            retVal[3].width = 16;
-            retVal[3].maxWidth = 16;
+            retVal[3].minWidth = 30;
+            retVal[3].width = 30;
+            retVal[3].maxWidth = 30;
             retVal[3].headerTextAlignment = TextAlignment.Left;
             retVal[3].canSort = true;
             retVal[3].autoResize = false;
