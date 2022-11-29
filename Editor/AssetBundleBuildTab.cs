@@ -443,7 +443,7 @@ namespace AssetBundleBrowser
         {
             m_UserData.m_UseDefaultPath = true;
             m_UserData.m_OutputPath = "AssetBundles/";
-            m_UserData.m_OutputPath += m_UserData.m_BuildTarget.ToString();
+            m_UserData.m_OutputPath += GetFolderNameForPlatform((BuildTarget)m_UserData.m_BuildTarget);
             //EditorUserBuildSettings.SetPlatformSettings(EditorUserBuildSettings.activeBuildTarget.ToString(), "AssetBundleOutputPath", m_OutputPath);
         }
 
