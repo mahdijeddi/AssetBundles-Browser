@@ -71,7 +71,7 @@ namespace AssetBundleBrowser
 
         internal AssetBundleBuildTab()
         {
-            m_AdvancedSettings = false;
+            m_AdvancedSettings = true;
             m_UserData = new BuildTabData();
             m_UserData.m_OnToggles = new List<string>();
             m_UserData.m_UseDefaultPath = true;
