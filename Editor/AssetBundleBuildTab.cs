@@ -1,10 +1,9 @@
-using UnityEditor;
-using UnityEngine;
+using AssetBundleBrowser.AssetBundleDataSource;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-
-using AssetBundleBrowser.AssetBundleDataSource;
+using UnityEditor;
+using UnityEngine;
 
 namespace AssetBundleBrowser
 {
@@ -365,7 +364,7 @@ namespace AssetBundleBrowser
                     Directory.CreateDirectory(m_UserData.m_OutputPath);
             }
 
-            BuildAssetBundleOptions opt = BuildAssetBundleOptions.None;
+            BuildAssetBundleOptions opt = BuildAssetBundleOptions.UseContentHash;
 
             if (AssetBundleModel.Model.DataSource.CanSpecifyBuildOptions)
             {
